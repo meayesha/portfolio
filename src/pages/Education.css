@@ -1,0 +1,204 @@
+.education-page {
+  position: relative;
+  min-height: 100vh;
+  padding: 3.5rem 2rem;
+  overflow: hidden;
+  background: transparent;
+}
+
+/* ✅ Background layer */
+.education-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* ✅ "liquid drift" / cinematic feel */
+  transform: scale(1.08);
+  animation: eduBgDrift 18s ease-in-out infinite alternate;
+
+  /* make image clearer */
+  filter: brightness(1.08) contrast(1.12) saturate(1.08);
+}
+
+@keyframes eduBgDrift {
+  0% {
+    transform: scale(1.08) translate3d(0px, 0px, 0px);
+  }
+  50% {
+    transform: scale(1.12) translate3d(-10px, -6px, 0px);
+  }
+  100% {
+    transform: scale(1.10) translate3d(10px, 8px, 0px);
+  }
+}
+
+/* ✅ Overlay for readability */
+.education-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.68) 0%,
+    rgba(0, 0, 0, 0.52) 35%,
+    rgba(0, 0, 0, 0.62) 100%
+  );
+}
+
+/* Content always above background */
+.education-inner {
+  position: relative;
+  z-index: 2;
+}
+
+/* ✅ Title moved DOWN so it's not under the nav bar */
+.education-page-title {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 3rem;
+
+  /* 🔥 THIS fixes overlap with navigation */
+  margin-top: 6rem;
+
+  background: linear-gradient(135deg, #a5b4fc 0%, #c4b5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.education-list {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.education-card {
+  width: 100%;
+  border-radius: 22px;
+  padding: 2rem 2.25rem;
+  background: rgba(15, 15, 25, 0.70);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 12px 38px rgba(0, 0, 0, 0.45);
+  transition: all 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(99, 102, 241, 0.35);
+  background: rgba(20, 20, 35, 0.78);
+}
+
+.education-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.education-logo-wrap {
+  width: 78px;
+  height: 78px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.education-logo {
+  width: 60px !important;
+  height: 60px !important;
+  max-width: 60px !important;
+  max-height: 60px !important;
+
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.35));
+}
+
+.education-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.education-year {
+  font-size: 1.35rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #a5b4fc 0%, #c4b5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.education-title {
+  font-size: 1.35rem;
+  font-weight: 750;
+  color: #ffffff;
+  margin: 0;
+}
+
+.education-college {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.86);
+  font-weight: 600;
+  margin: 0;
+}
+
+/* footer */
+.site-footer {
+  text-align: center;
+  padding: 3rem 0 1.5rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .education-page {
+    padding: 2.5rem 1rem;
+  }
+
+  .education-page-title {
+    font-size: 2.2rem;
+    margin-top: 5.5rem;
+  }
+
+  .education-card {
+    padding: 1.5rem;
+  }
+
+  .education-logo-wrap {
+    width: 68px;
+    height: 68px;
+  }
+
+  .education-logo {
+    width: 52px !important;
+    height: 52px !important;
+    max-width: 52px !important;
+    max-height: 52px !important;
+  }
+
+  .education-title {
+    font-size: 1.15rem;
+  }
+
+  .education-year {
+    font-size: 1.2rem;
+  }
+
+  .education-college {
+    font-size: 0.95rem;
+  }
+}

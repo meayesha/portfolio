@@ -1,0 +1,149 @@
+.about-section {
+  background: transparent;
+  position: relative;
+  z-index: 3;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+/* Section title */
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  background: linear-gradient(135deg, #a5b4fc 0%, #c7d2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Layout */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* LEFT COLUMN */
+.about-text {
+  margin-top: 4rem;
+  transform: translateX(-120px);
+  will-change: transform;
+}
+
+/* LEFT CARD */
+.about-card {
+  padding: 2.2rem;
+  background: rgba(99, 102, 241, 0.14);
+  border-radius: 18px;
+  border: 1px solid rgba(165, 180, 252, 0.35);
+
+  color: #f1f5f9; /* 👈 brighter than before */
+  font-size: 1.05rem;
+  line-height: 1.75;
+  font-weight: 400;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+}
+
+.about-card p {
+  margin-bottom: 1.6rem;
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* RIGHT COLUMN */
+.about-focus {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.focus-section {
+  padding: 2rem;
+  background: rgba(99, 102, 241, 0.14);
+  border-radius: 18px;
+  border: 1px solid rgba(165, 180, 252, 0.35);
+  transition: all 0.3s ease;
+
+  transform: translateX(120px);
+  will-change: transform;
+
+  backdrop-filter: blur(8px);
+}
+
+.focus-section:hover {
+  background: rgba(99, 102, 241, 0.18);
+  transform: translateY(-6px);
+}
+
+/* Sub-headings */
+.focus-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+
+  background: linear-gradient(135deg, #c7d2fe 0%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Focus list */
+.focus-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.focus-list li {
+  font-size: 0.95rem;
+  padding: 0.45rem 0;
+  color: #e5e7eb;
+  position: relative;
+  padding-left: 1.4rem;
+}
+
+.focus-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #a5b4fc;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-text {
+    margin-top: 0;
+    transform: translateX(0);
+  }
+
+  .focus-section {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about-card {
+    font-size: 0.95rem;
+    padding: 1.6rem;
+  }
+
+  .focus-section {
+    padding: 1.5rem;
+  }
+}

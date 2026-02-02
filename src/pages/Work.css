@@ -1,0 +1,102 @@
+.work-page {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 7rem; /* keeps content below navbar */
+  overflow: hidden;
+}
+
+/* ✅ Background wrapper */
+.work-bg-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* ✅ Canvas background */
+.work-streams-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ✅ Overlay for readability + warm tint (less dark now) */
+.work-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 25% 20%,
+      rgba(255, 195, 106, 0.16),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 70% 75%,
+      rgba(99, 102, 241, 0.10),
+      transparent 60%
+    ),
+    rgba(0, 0, 0, 0.45); /* ✅ was darker */
+}
+
+/* ✅ Foreground content stays above */
+.work-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* ✅ Divider between Experience / Projects / Skills */
+.work-divider {
+  height: 2px;
+  margin: 4rem auto;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 195, 106, 0.55),
+    rgba(99, 102, 241, 0.40),
+    transparent
+  );
+  opacity: 0.9;
+}
+
+/* ✅ Remove normal list bullets inside Work (if any) */
+.work-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.work-content li {
+  margin-left: 0;
+}
+
+/* ✅ Remove Experience timeline “dots / bullets” on the left */
+.work-content .timeline-dot,
+.work-content .timeline-bullet,
+.work-content .experience-dot,
+.work-content .experience-bullet,
+.work-content .dot {
+  display: none !important;
+}
+
+/* ✅ Also hide any ::before bullets used for timeline rows */
+.work-content .timeline-item::before,
+.work-content .experience-item::before {
+  display: none !important;
+  content: none !important;
+}
+
+/* ✅ Mobile */
+@media (max-width: 768px) {
+  .work-page {
+    padding-top: 6rem;
+  }
+
+  .work-content {
+    padding: 1.5rem 1rem 3rem;
+  }
+}

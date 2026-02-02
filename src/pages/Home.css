@@ -1,0 +1,29 @@
+.home-page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.bg-3d {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+.bg-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background:
+    radial-gradient(
+      circle at 30% 20%,
+      rgba(255, 195, 106, 0.14),
+      transparent 60%
+    ),
+    rgba(0, 0, 0, 0.45);
+}
+
+.home-content {
+  position: relative;
+  z-index: 2;
+}

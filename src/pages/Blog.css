@@ -1,0 +1,139 @@
+/* ----------------------------
+   🌾 BLOG PAGE BASE
+----------------------------- */
+.blog-page {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  color: #1f2937;
+  background: #ede9e2;
+}
+
+/* ----------------------------
+   🌾 PAPER BACKGROUND
+----------------------------- */
+.blog-paper-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(245,235,210,0.75), transparent 60%),
+    radial-gradient(circle at 70% 80%, rgba(225,215,190,0.65), transparent 65%),
+    #ede9e2;
+}
+
+.blog-paper-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+/* ----------------------------
+   💭 FLOATING THOUGHTS
+----------------------------- */
+.blog-thoughts {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Shared thought base */
+.thought {
+  position: absolute;
+  white-space: nowrap;
+  animation: driftUp linear infinite;
+  filter: blur(0.4px);
+  opacity: 0;
+}
+
+/* Text thoughts */
+.thought.text {
+  font-size: 0.95rem;
+  color: rgba(40, 40, 40, 0.42);
+  animation-duration: 28s;
+}
+
+/* Code thoughts */
+.thought.code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+  font-size: 0.9rem;
+  color: rgba(30, 30, 30, 0.38);
+  animation-duration: 32s;
+}
+
+/* Math thoughts */
+.thought.math {
+  font-family: 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: rgba(25, 25, 25, 0.45);
+  animation-duration: 36s;
+}
+
+/* Position groups (no nth-child dependence) */
+.thought:nth-of-type(1)  { left: 8%;  bottom: -10%; animation-delay: 0s; }
+.thought:nth-of-type(2)  { left: 22%; bottom: -15%; animation-delay: 4s; }
+.thought:nth-of-type(3)  { left: 38%; bottom: -12%; animation-delay: 8s; }
+.thought:nth-of-type(4)  { left: 55%; bottom: -18%; animation-delay: 12s; }
+.thought:nth-of-type(5)  { left: 70%; bottom: -14%; animation-delay: 16s; }
+.thought:nth-of-type(6)  { left: 85%; bottom: -20%; animation-delay: 20s; }
+.thought:nth-of-type(7)  { left: 15%; bottom: -22%; animation-delay: 24s; }
+.thought:nth-of-type(8)  { left: 32%; bottom: -25%; animation-delay: 28s; }
+.thought:nth-of-type(9)  { left: 48%; bottom: -28%; animation-delay: 32s; }
+.thought:nth-of-type(10) { left: 65%; bottom: -30%; animation-delay: 36s; }
+.thought:nth-of-type(11) { left: 80%; bottom: -26%; animation-delay: 40s; }
+.thought:nth-of-type(12) { left: 92%; bottom: -32%; animation-delay: 44s; }
+.thought:nth-of-type(13) { left: 5%;  bottom: -34%; animation-delay: 48s; }
+.thought:nth-of-type(14) { left: 27%; bottom: -36%; animation-delay: 52s; }
+.thought:nth-of-type(15) { left: 50%; bottom: -38%; animation-delay: 56s; }
+.thought:nth-of-type(16) { left: 73%; bottom: -40%; animation-delay: 60s; }
+
+@keyframes driftUp {
+  0%   { transform: translateY(0); opacity: 0; }
+  15%  { opacity: 0.45; }
+  85%  { opacity: 0.35; }
+  100% { transform: translateY(-120vh); opacity: 0; }
+}
+
+/* ----------------------------
+   📄 CONTENT
+----------------------------- */
+.blog-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 7rem 2rem 4rem;
+}
+
+.blog-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.blog-intro {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #374151;
+  margin-top: 1rem;
+}
+
+/* ----------------------------
+   📱 RESPONSIVE
+----------------------------- */
+@media (max-width: 768px) {
+  .blog-thoughts {
+    display: none;
+  }
+
+  .blog-content {
+    padding: 6rem 1.5rem 3rem;
+  }
+
+  .blog-content h1 {
+    font-size: 2rem;
+  }
+}

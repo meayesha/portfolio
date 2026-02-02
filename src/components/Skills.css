@@ -1,0 +1,117 @@
+.skills-section {
+  background: transparent;
+  backdrop-filter: blur(2px);
+}
+
+/* Two-column layout like About */
+.skills-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* LEFT: Skills */
+.skills-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.skill-group {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.group-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  background: linear-gradient(135deg, #a5b4fc 0%, #c4b5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Tech stack pills (same language as Projects) */
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tech-pill {
+  padding: 0.45rem 0.85rem;
+  background: rgba(99, 102, 241, 0.2);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #a0a0ff;
+  font-weight: 500;
+}
+
+/* RIGHT: Certifications */
+.skills-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-section {
+  background: rgba(99, 102, 241, 0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.cert-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #a5b4fc 0%, #c4b5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cert-card {
+  margin-bottom: 1.5rem;
+}
+
+.cert-card:last-child {
+  margin-bottom: 0;
+}
+
+.cert-card h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.cert-issuer {
+  font-size: 0.85rem;
+  color: #8b5cf6;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.cert-card p {
+  font-size: 0.95rem;
+  color: #b8b8b8;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .skills-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-group,
+  .cert-section {
+    padding: 1.5rem;
+  }
+}
