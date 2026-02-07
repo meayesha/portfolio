@@ -54,7 +54,8 @@ export default function Education({ setCurrentSection }) {
       <div
         className="education-bg"
         style={{
-          backgroundImage: `url('./images/study.jpg')`,
+          backgroundImage: `url(${import.meta.env.BASE_URL}images/study.jpg)`
+
         }}
       />
 
