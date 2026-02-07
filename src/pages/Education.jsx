@@ -8,21 +8,21 @@ const education = [
     year: '2022',
     degree: 'Master of Science in Computer Science',
     college: 'Stevens Institute of Technology',
-    logo: '/logos/stevens.png',
+    logo: './logos/stevens.png',
   },
   {
     id: 2,
     year: '2022',
     degree: 'Graduate Certificate in Machine Learning',
     college: 'Stevens Institute of Technology',
-    logo: '/logos/stevens.png',
+    logo: './logos/stevens.png',
   },
   {
     id: 3,
     year: '2017',
     degree: 'Bachelor of Technology in Information Technology',
     college: 'St. Thomas College of Engineering & Technology',
-    logo: '/logos/stcet.png',
+    logo: './logos/stcet.png',
   },
 ]
 

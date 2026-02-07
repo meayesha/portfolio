@@ -14,11 +14,11 @@ export default function Navigation({ variant }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const location = useLocation()
 
-  // ✅ Auto theme based on route if variant isn't passed
+  // ✅ HashRouter-safe theme detection
   const navTheme = useMemo(() => {
     if (variant) return variant
 
-    const path = location.pathname
+    const path = location.pathname || '/'
 
     if (path === '/') return 'home'
     if (path.startsWith('/blog')) return 'blog'
@@ -29,7 +29,7 @@ export default function Navigation({ variant }) {
     return 'default'
   }, [location.pathname, variant])
 
-  // ✅ Close menu on route change
+  // ✅ Close mobile menu on route change
   useEffect(() => {
     setIsMenuOpen(false)
   }, [location.pathname])
@@ -46,7 +46,6 @@ export default function Navigation({ variant }) {
       const menu = document.querySelector('.mobile-menu')
       const button = document.querySelector('.hamburger-menu')
       if (!menu || !button) return
-
       if (menu.contains(e.target) || button.contains(e.target)) return
       setIsMenuOpen(false)
     }
@@ -68,7 +67,7 @@ export default function Navigation({ variant }) {
       transition={{ duration: 0.45 }}
     >
       <div className="nav-container">
-        {/* LEFT SIDE */}
+        {/* LEFT */}
         <div className="nav-left">
           <button
             type="button"
@@ -82,19 +81,23 @@ export default function Navigation({ variant }) {
             <span className="hamburger-line" />
           </button>
 
-          {/* ✅ Logo (NOT clickable) */}
+          {/* ✅ Logo (GitHub Pages safe path) */}
           <div className="nav-logo" aria-label="Ayesha Parveen">
-            <img src="/logos/name_logo.png" alt="Ayesha Parveen logo" />
+            <img
+              src={`${import.meta.env.BASE_URL}logos/name_logo.png`}
+              alt="Ayesha Parveen logo"
+            />
           </div>
         </div>
 
-        {/* RIGHT SIDE */}
+        {/* RIGHT */}
         <div className="nav-right">
-          {/* ✅ Blog stays on right only */}
+          {/* Blog shortcut */}
           <Link to="/blog" className="nav-blog-link">
             Blog
           </Link>
 
+          {/* Social icons */}
           <div className="nav-social-links">
             {/* LinkedIn */}
             <a
@@ -141,7 +144,7 @@ export default function Navigation({ variant }) {
         </div>
       </div>
 
-      {/* ✅ Mobile dropdown (NO extra header / X inside) */}
+      {/* MOBILE MENU */}
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
@@ -152,7 +155,11 @@ export default function Navigation({ variant }) {
             transition={{ duration: 0.2 }}
           >
             {navItems.map((item) => (
-              <Link key={item.id} to={item.path} className="mobile-nav-link">
+              <Link
+                key={item.id}
+                to={item.path}
+                className="mobile-nav-link"
+              >
                 {item.label}
               </Link>
             ))}
