@@ -1,6 +1,6 @@
 export const ROBOT_MESSAGES = {
   // General
-  intro: "Hi, I’m Sui 🤖.. Glad to see you here!",
+  intro: "Hi, I’m Sui 🤖.. Glad to see you here!😁",
 
   // Home
   hero: "This space blends AI, healthcare, and human-centered design.",
