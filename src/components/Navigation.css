@@ -177,7 +177,7 @@
 .mobile-menu {
   position: fixed;
   top: 82px;
-  left: 150px;
+  left: 10px;
   width: 170px;
 
   padding: 1rem 1rem 1.15rem;
