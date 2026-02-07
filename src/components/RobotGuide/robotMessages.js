@@ -8,8 +8,8 @@ export const ROBOT_MESSAGES = {
 
   // Pages
   homeRoute: "Welcome home ✨ Take a look around.",
-  workRoute: "Here’s a closer look at my work and projects.",
+  workRoute: "Here’s a closer look at my work experience and projects.",
   blogRoute: "Thoughts, notes, and explorations live here.",
-  educationRoute: "My academic journey and learning path.",
+  educationRoute: "A little glimse of my academic journey and learning path.",
   contactRoute: "Let’s connect!! I’d love to hear from you 💬",
 }
