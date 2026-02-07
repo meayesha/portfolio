@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-/* ✅ Background wrapper */
+/* Background wrapper */
 .work-bg-wrapper {
   position: fixed;
   inset: 0;
@@ -13,7 +13,7 @@
   overflow: hidden;
 }
 
-/* ✅ Canvas background */
+/* Canvas background */
 .work-streams-canvas {
   position: absolute;
   inset: 0;
@@ -21,7 +21,7 @@
   height: 100%;
 }
 
-/* ✅ Overlay for readability + warm tint (less dark now) */
+
 .work-bg-overlay {
   position: absolute;
   inset: 0;
@@ -39,7 +39,7 @@
     rgba(0, 0, 0, 0.45); /* ✅ was darker */
 }
 
-/* ✅ Foreground content stays above */
+/* Foreground content stays above */
 .work-content {
   position: relative;
   z-index: 2;
@@ -48,7 +48,7 @@
   padding: 2rem 1.5rem 4rem;
 }
 
-/* ✅ Divider between Experience / Projects / Skills */
+/* ivider between Experience / Projects / Skills */
 .work-divider {
   height: 2px;
   margin: 4rem auto;
@@ -63,7 +63,7 @@
   opacity: 0.9;
 }
 
-/* ✅ Remove normal list bullets inside Work (if any) */
+
 .work-content ul {
   list-style: none;
   padding-left: 0;
@@ -74,7 +74,7 @@
   margin-left: 0;
 }
 
-/* ✅ Remove Experience timeline “dots / bullets” on the left */
+
 .work-content .timeline-dot,
 .work-content .timeline-bullet,
 .work-content .experience-dot,
@@ -83,14 +83,14 @@
   display: none !important;
 }
 
-/* ✅ Also hide any ::before bullets used for timeline rows */
+
 .work-content .timeline-item::before,
 .work-content .experience-item::before {
   display: none !important;
   content: none !important;
 }
 
-/* ✅ Mobile */
+/* Mobile */
 @media (max-width: 768px) {
   .work-page {
     padding-top: 6rem;

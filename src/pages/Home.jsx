@@ -27,7 +27,7 @@ export default function Home() {
   )
 
   // -----------------------------
-  // ✅ Background: SOLID cube made of circles
+  //  Background: SOLID cube made of circles
   // -----------------------------
   useEffect(() => {
     if (!bgWrapRef.current) return
@@ -152,7 +152,7 @@ export default function Home() {
   }, [COLOR])
 
   // -----------------------------
-  // ✅ Scroll animations
+  // Scroll animations
   // -----------------------------
   useEffect(() => {
     requestAnimationFrame(() => ScrollTrigger.refresh())

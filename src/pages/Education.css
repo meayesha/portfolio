@@ -6,7 +6,7 @@
   background: transparent;
 }
 
-/* ✅ Background layer */
+/* Background layer */
 .education-bg {
   position: absolute;
   inset: 0;
@@ -16,7 +16,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  /* ✅ "liquid drift" / cinematic feel */
+  /* "liquid drift" / cinematic feel */
   transform: scale(1.08);
   animation: eduBgDrift 18s ease-in-out infinite alternate;
 
@@ -36,7 +36,7 @@
   }
 }
 
-/* ✅ Overlay for readability */
+/* Overlay for readability */
 .education-overlay {
   position: absolute;
   inset: 0;
@@ -56,14 +56,14 @@
   z-index: 2;
 }
 
-/* ✅ Title moved DOWN so it's not under the nav bar */
+
 .education-page-title {
   font-size: 3rem;
   font-weight: 800;
   text-align: center;
   margin-bottom: 3rem;
 
-  /* 🔥 THIS fixes overlap with navigation */
+  
   margin-top: 6rem;
 
   background: linear-gradient(135deg, #a5b4fc 0%, #c4b5fd 100%);

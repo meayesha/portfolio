@@ -12,7 +12,7 @@
   height: 0;
 }
 
-/* ✅ Real distorted coffee background */
+/*  Real distorted coffee background */
 .contact-bg-liquid {
   position: absolute;
   inset: 0;
@@ -21,20 +21,20 @@
   background-image: url('/images/coffee.jpg');
   background-size: cover;
 
-  /* ✅ Smaller zoom to make cup more visible */
+  /* Smaller zoom to make cup more visible */
   transform: scale(1.02);
 
-  /* ✅ Center the cup more clearly */
+  /* Center the cup more clearly */
   background-position: center 65%;
   background-repeat: no-repeat;
 
-  /* ✅ Real distortion */
+  /* Real distortion */
   filter: url(#liquidDistortion);
 
   opacity: 0.95;
 }
 
-/* ✅ Dark overlay for text readability */
+/* Dark overlay for text readability */
 .contact-overlay {
   position: absolute;
   inset: 0;

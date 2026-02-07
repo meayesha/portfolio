@@ -6,6 +6,7 @@
   z-index: 1000;
 }
 
+/* Centered container */
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -16,11 +17,12 @@
   align-items: center;
 
   border-radius: 16px;
+  position: relative; 
 
   transition: background 0.35s ease, border 0.35s ease, box-shadow 0.35s ease;
 }
 
-/* ✅ THEMES */
+/* THEMES */
 .nav--home .nav-container {
   background: rgba(45, 35, 80, 0.4);
   backdrop-filter: blur(14px);
@@ -63,7 +65,7 @@
   gap: 0.75rem;
 }
 
-/* Hamburger button */
+/* Hamburger */
 .hamburger-menu {
   width: 34px;
   height: 34px;
@@ -109,17 +111,10 @@
 }
 
 /* Logo */
-.nav-logo {
-  display: flex;
-  align-items: center;
-}
-
 .nav-logo img {
   height: 34px;
   width: auto;
   display: block;
-  background: transparent;
-  border: none;
 }
 
 /* RIGHT */
@@ -144,18 +139,12 @@
 }
 
 @keyframes blogPulse {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-/* Social icons */
+/* Social */
 .nav-social-links {
   display: flex;
   gap: 0.85rem;
@@ -173,15 +162,14 @@
   transform: translateY(-2px);
 }
 
-/* ✅ Mobile menu (small floating card) */
+/* ✅ MOBILE MENU — FIXED */
 .mobile-menu {
-  position: fixed;
-  top: 82px;
-  left: 10px;
-  width: 170px;
+  position: absolute;           
+  top: calc(100% + 10px);
+  left: 0;                       /* aligns under hamburger */
+  width: 180px;
 
   padding: 1rem 1rem 1.15rem;
-
   background: rgba(10, 10, 15, 0.92);
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 16px;
@@ -203,7 +191,6 @@
 
   padding: 0.45rem 0.4rem;
   border-radius: 10px;
-
   transition: background 0.2s ease, color 0.2s ease;
 }
 

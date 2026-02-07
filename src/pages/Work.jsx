@@ -41,7 +41,7 @@ export default function Work() {
       canvas.height = Math.floor(state.h * dpr)
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
 
-      // ✅ Slower streams
+      // Slower streams
       const count = Math.max(26, Math.floor(state.w / 40))
       state.streams = Array.from({ length: count }).map((_, i) => {
         const x = (i / (count - 1)) * state.w
@@ -56,13 +56,13 @@ export default function Work() {
         }
       })
 
-      // ✅ Slower packets + BIGGER packets
+      // Slower packets + BIGGER packets
       const packetCount = Math.max(65, Math.floor(state.w / 10))
       state.particles = Array.from({ length: packetCount }).map(() => ({
         x: rand(0, state.w),
         y: rand(0, state.h),
         vy: rand(12, 55),
-        r: rand(1.8, 3.6), // ✅ bigger packets
+        r: rand(1.8, 3.6), // bigger packets
         glow: rand(0.12, 0.34),
         jitter: rand(0.6, 2.1),
       }))
@@ -203,13 +203,13 @@ export default function Work() {
 
   return (
     <section className="work-page">
-      {/* ✅ Telemetry Data Streams Background */}
+      {/* Telemetry Data Streams Background */}
       <div className="work-bg-wrapper">
         <canvas ref={canvasRef} className="work-streams-canvas" />
         <div className="work-bg-overlay" />
       </div>
 
-      {/* ✅ Foreground Content */}
+      {/* Foreground Content */}
       <div className="work-content">
         {/* EXPERIENCE */}
         <motion.div

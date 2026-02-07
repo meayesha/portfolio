@@ -50,7 +50,7 @@ export default function Education({ setCurrentSection }) {
 
   return (
     <section id="education" ref={sectionRef} className="education-page">
-      {/* ✅ Background in JSX */}
+      {/* Background in JSX */}
       <div
         className="education-bg"
         style={{
@@ -59,10 +59,10 @@ export default function Education({ setCurrentSection }) {
         }}
       />
 
-      {/* ✅ Overlay so text/cards readable */}
+      {/* Overlay so text/cards readable */}
       <div className="education-overlay" />
 
-      {/* ✅ Content */}
+      {/* Content */}
       <div className="education-inner">
         <div className="section-content">
           <motion.div
@@ -71,7 +71,7 @@ export default function Education({ setCurrentSection }) {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            {/* ✅ moved lower via CSS */}
+            
             <h2 className="education-page-title">Education</h2>
 
             <div className="education-list">

@@ -21,7 +21,7 @@
   align-items: flex-start;
 }
 
-/* ✅ HIDE timeline marker completely (dot + line) */
+
 .timeline-marker {
   width: 0;
   margin: 0;
@@ -150,7 +150,6 @@
     align-items: flex-start;
   }
 
-  /* ✅ marker removed so no special positioning needed */
   .timeline-marker {
     display: none !important;
   }

@@ -14,7 +14,7 @@ export default function Navigation({ variant }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const location = useLocation()
 
-  // ✅ HashRouter-safe theme detection
+  
   const navTheme = useMemo(() => {
     if (variant) return variant
 
@@ -29,12 +29,12 @@ export default function Navigation({ variant }) {
     return 'default'
   }, [location.pathname, variant])
 
-  // ✅ Close mobile menu on route change
+  // Close mobile menu on route change
   useEffect(() => {
     setIsMenuOpen(false)
   }, [location.pathname])
 
-  // ✅ Close menu on outside click + ESC
+  // Close menu on outside click + ESC
   useEffect(() => {
     if (!isMenuOpen) return
 
