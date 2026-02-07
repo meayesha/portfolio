@@ -166,7 +166,7 @@
 .mobile-menu {
   position: absolute;           
   top: calc(100% + 10px);
-  left: 0;                       /* aligns under hamburger */
+  left: 0;                    /* aligns under hamburger */
   width: 180px;
 
   padding: 1rem 1rem 1.15rem;
