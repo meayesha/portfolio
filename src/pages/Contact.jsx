@@ -24,7 +24,7 @@ export default function Contact() {
 
   return (
     <section className="contact-section">
-      {/* ✅ SVG FILTER (REAL LIQUID DISTORTION) */}
+      {/* SVG FILTER (REAL LIQUID DISTORTION) */}
       <svg className="liquid-filter" aria-hidden="true">
         <filter id="liquidDistortion">
           <feTurbulence
@@ -48,7 +48,7 @@ export default function Contact() {
             />
           </feTurbulence>
 
-          {/* ✅ Reduced distortion so cup stays clear */}
+          {/*  Reduced distortion so cup stays clear */}
           <feDisplacementMap
             in="SourceGraphic"
             in2="noise"
@@ -66,13 +66,13 @@ export default function Contact() {
         </filter>
       </svg>
 
-      {/* ✅ DISTORTED BACKGROUND */}
+      {/* DISTORTED BACKGROUND */}
       <div className="contact-bg-liquid" />
 
-      {/* ✅ DARK OVERLAY for readability */}
+      {/* DARK OVERLAY for readability */}
       <div className="contact-overlay" />
 
-      {/* ✅ FOREGROUND CONTENT */}
+      {/* FOREGROUND CONTENT */}
       <div className="section-content contact-foreground">
         <motion.div
           initial={{ opacity: 0, y: 25 }}
