@@ -29,6 +29,14 @@ const projects = [
   },
   {
     id: 4,
+    title: 'A personalized glucose prediction for type-1 diabetes patients',
+    description: 'The main contribution is an incremental LSTM that addresses the cold-start problem: a general model is trained on other patients, then fine-tuned day-by-day as new CGM data from the target patient becomes available.',
+    tech: ['Python', 'Tensorflow', 'Deep Learning', 'Machine Learning', 'Health-informatics'],
+    color: '#6366f1',
+    github: 'https://github.com/meayesha/A-Personalized-deep-learning-approach-for-blood-glucose-prediction-in-people-with-T1DM',
+  },
+  {
+    id: 5,
     title: 'Covid 19 - Vaccine Scheduler',
     description: 'A web application to schedule appointments for Covid 19 vaccines.',
     tech: ['React', 'Node.js', 'TypeScript', 'Firebase', 'Redis', 'Tesseract', 'RabbitMQ'],
@@ -36,7 +44,7 @@ const projects = [
     github: 'https://github.com/meayesha/Covid-19-Vaccine-Scheduler',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Blog Post Recommendation',
     description: 'A web application that recommends blog/articles based on user recommendation.',
     tech: ['Express.js', 'Three.js', 'JavaScript', 'MongoDB'],
@@ -44,7 +52,7 @@ const projects = [
     github: 'https://github.com/meayesha/Blog-Post-Recommendation',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Music Popularity Prediction',
     description: 'A system to predict the popularity of music based on its audio features.',
     tech: ['Python', 'Machine Learning', 'Data Analysis'],

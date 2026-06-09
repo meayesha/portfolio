@@ -137,3 +137,83 @@
     font-size: 2rem;
   }
 }
+
+/* ----------------------------
+✍️ SUBSTACK LINK
+----------------------------- */
+
+.substack-banner {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  }
+  
+  .substack-banner a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(55, 65, 81, 0.3);
+  padding-bottom: 0.2rem;
+  transition: all 0.25s ease;
+  }
+  
+  .substack-banner a:hover {
+  color: #111827;
+  border-color: #111827;
+  }
+  
+  /* ----------------------------
+  📝 ARTICLE CARDS
+  ----------------------------- */
+  
+  .articles-grid {
+  display: grid;
+  gap: 1.5rem;
+  }
+  
+  .article-card {
+  text-decoration: none;
+  color: inherit;
+  
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8px);
+  
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 18px;
+  
+  padding: 1.75rem;
+  transition: all 0.3s ease;
+  }
+  
+  .article-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  }
+  
+  .article-card h2 {
+  margin: 0.5rem 0 1rem;
+  font-size: 1.3rem;
+  color: #111827;
+  }
+  
+  .article-card p {
+  line-height: 1.7;
+  }
+  
+  .article-date {
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #6b7280;
+  }
+  
+  .read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #374151;
+  }
+  
