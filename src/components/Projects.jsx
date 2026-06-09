@@ -25,7 +25,7 @@ const projects = [
     description: 'InfraSquad is a multi-agent system that takes natural language infrastructure requirements, debates cloud architecture, writes Terraform code, runs an automated security scan via an MCP server, and generates a visual architecture diagram. Users go from a text prompt to a generated diagram, deployable Terraform, and a security report in minutes.',
     tech: ['Python', 'LangGraph', 'MCP', 'Terraform', 'AWS', 'Generative AI'],
     color: '#6366f1',
-    github: 'https://github.com/meayesha/Covid-19-Vaccine-Scheduler',
+    github: 'https://github.com/meayesha/infrasquad',
   },
   {
     id: 4,
