@@ -17,7 +17,7 @@ return (
           </p>
 
           <p>
-            💡 ’m particularly interested in how AI systems can be designed to support people in meaningful, responsible, and context-aware ways.
+            💡 I’m particularly interested in how AI systems can be designed to support people in meaningful, responsible, and context-aware ways.
              My research interests lie in understanding human behavior, decision-making, and lived experiences, and exploring how these 
              insights can inform the design of technologies that are useful, trustworthy, and easy to engage with.
             
