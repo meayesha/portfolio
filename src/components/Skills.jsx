@@ -5,11 +5,11 @@ import './Skills.css'
 const skillGroups = [
   {
     category: 'Frontend',
-    tech: ['React', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'Three.js'],
+    tech: ['React', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'Three.js', 'Next.js'],
   },
   {
     category: 'Backend',
-    tech: ['Node.js', 'Express.js', 'Python', 'REST APIs'],
+    tech: ['Node.js', 'Express.js', 'Python', 'REST APIs', 'FASTAPI'],
   },
   {
     category: 'Databases',
@@ -17,11 +17,11 @@ const skillGroups = [
   },
   {
     category: 'AI & ML',
-    tech: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'Deep Learning', 'NLP'],
+    tech: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'Deep Learning', 'NLP', 'Generative AI', 'RAG', 'LangChain', 'LangGraph',],
   },
   {
     category: 'Tools & Platforms',
-    tech: ['Git', 'Docker', 'Firebase', 'Linux', 'AWS'],
+    tech: ['Git', 'Docker', 'Firebase', 'Linux', 'AWS', 'MCP', 'Vercel', 'Hugging Face', 'Azure'],
   },
 ]
 
