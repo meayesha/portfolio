@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="hero-section">
       <div className="hero-card">
         <h1>
-          Heya, I’m <span className="accent">Ayesha</span>
+          Heya, I’m <span className="accent">Aayeshaa</span>
         </h1>
 
         <h2>
