@@ -101,7 +101,7 @@ export default function Navigation({ variant }) {
           <div className="nav-social-links">
             {/* LinkedIn */}
             <a
-              href="https://www.linkedin.com/in/ayesha-parveen-144398122/"
+              href="https://www.linkedin.com/in/aayeshaa-parveen-144398122/"
               target="_blank"
               rel="noopener noreferrer"
               className="nav-social-link"
@@ -129,7 +129,7 @@ export default function Navigation({ variant }) {
 
             {/* Instagram */}
             <a
-              href="https://instagram.com/by_ayesha24"
+              href="https://instagram.com/aayeshaaparveen01"
               target="_blank"
               rel="noopener noreferrer"
               className="nav-social-link"
