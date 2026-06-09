@@ -5,6 +5,30 @@ import './Projects.css'
 const projects = [
   {
     id: 1,
+    title: 'Sentinel - AI-powered incident intelligence platform',
+    description: 'Sentinel is an AI-powered incident intelligence platform. It turns raw logs and incident narratives into structured analysis—summaries, severity, likely root cause, evidence-grounded remediation, and exportable reports—so teams can respond faster with less manual triage.',
+    tech: ['Python 3.12+', 'Next.js 14', 'SQLite', 'Aurora Serverless v2 + RDS Data API (AWS deployment)', 'AWS', 'Generative AI'],
+    color: '#6366f1',
+    github: 'https://github.com/meayesha/sentinel',
+  },
+  {
+    id: 2,
+    title: 'Research paper scout agent',
+    description: 'A research paper scout agent that scouts for research papers and summarizes them.',
+    tech: ['Python 3.12','Generative AI','RAG','Gradio'],
+    color: '#6366f1',
+    github: 'https://github.com/meayesha/research-paper-scout-agent',
+  },
+  {
+    id: 3,
+    title: 'Infrasquad - The Autonomous Cloud Architecture and Security Team.',
+    description: 'InfraSquad is a multi-agent system that takes natural language infrastructure requirements, debates cloud architecture, writes Terraform code, runs an automated security scan via an MCP server, and generates a visual architecture diagram. Users go from a text prompt to a generated diagram, deployable Terraform, and a security report in minutes.',
+    tech: ['Python', 'LangGraph', 'MCP', 'Terraform', 'AWS', 'Generative AI'],
+    color: '#6366f1',
+    github: 'https://github.com/meayesha/Covid-19-Vaccine-Scheduler',
+  },
+  {
+    id: 4,
     title: 'Covid 19 - Vaccine Scheduler',
     description: 'A web application to schedule appointments for Covid 19 vaccines.',
     tech: ['React', 'Node.js', 'TypeScript', 'Firebase', 'Redis', 'Tesseract', 'RabbitMQ'],
@@ -12,7 +36,7 @@ const projects = [
     github: 'https://github.com/meayesha/Covid-19-Vaccine-Scheduler',
   },
   {
-    id: 2,
+    id: 5,
     title: 'Blog Post Recommendation',
     description: 'A web application that recommends blog/articles based on user recommendation.',
     tech: ['Express.js', 'Three.js', 'JavaScript', 'MongoDB'],
@@ -20,7 +44,7 @@ const projects = [
     github: 'https://github.com/meayesha/Blog-Post-Recommendation',
   },
   {
-    id: 3,
+    id: 6,
     title: 'Music Popularity Prediction',
     description: 'A system to predict the popularity of music based on its audio features.',
     tech: ['Python', 'Machine Learning', 'Data Analysis'],
