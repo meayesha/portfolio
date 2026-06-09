@@ -17,17 +17,15 @@ return (
           </p>
 
           <p>
-            💡 I’m particularly interested in how AI systems can be designed
-            to support people in meaningful, responsible, and context-aware
-            ways. My work focuses on understanding human behavior,
-            decision-making, and lived experiences, and translating those
-            insights into technologies that are useful, trustworthy, and
-            easy to engage with.
+            💡 ’m particularly interested in how AI systems can be designed to support people in meaningful, responsible, and context-aware ways.
+             My research interests lie in understanding human behavior, decision-making, and lived experiences, and exploring how these 
+             insights can inform the design of technologies that are useful, trustworthy, and easy to engage with.
+            
           </p>
 
           <p>
             🌱 I want to better understand how people engage with technology
-            in real life—what supports them, what overwhelms them, and what
+            in real life - what supports them, what overwhelms them, and what
             earns their trust over time. By translating these insights into
             design, I aim to create tools that feel personal, intuitive, and
             seamlessly integrated into everyday life, particularly in health
