@@ -5,6 +5,16 @@ import './Experience.css'
 const experiences = [
   {
     id: 1,
+    year: '2026',
+    month: 'Present',
+    title: 'AI engineer',
+    company: 'Andela | Freelance',
+    description:
+      'Selected among 150 senior engineers worldwide for an intensive 10-week AI engineering program focused on building production-ready Generative AI systems. Designed and deployed LLM-powered applications using RAG, multi-agent architectures, LangChain, and advanced prompting techniques on AWS and Azure. Developed autonomous AI workflows that transformed traditional software processes into intelligent, multi-step reasoning systems.',
+    technologies: ['Generative AI', 'FASTAPI', 'Python', 'Next.js', 'AWS', 'Azure','Hugging Face', 'LangChain', 'LangGraph', 'RAG', 'Multi-agent architectures', 'Vercel','MCP','Docker'],
+  },
+  {
+    id: 2,
     year: '2024',
     month: 'Present',
     title: 'R&D Engineer and AI Training Specialist',
@@ -14,7 +24,7 @@ const experiences = [
     technologies: ['AI', 'Machine Learning', 'Python', 'Word Press', 'Social Media Marketing'],
   },
   {
-    id: 2,
+    id: 3,
     year: '2022-2024',
     month: 'Feb - May',
     title: 'Full Stack Developer',
@@ -24,7 +34,7 @@ const experiences = [
     technologies: ['JavaScript', 'JQuery', 'React', 'HTML', 'SQL', 'PL/SQL', 'SQL*LOADER', 'CSS', 'AWS'],
   },
   {
-    id: 3,
+    id: 4,
     year: '2020-2021',
     month: 'Sep - Dec',
     title: 'Machine Learning Research Assistant',
@@ -44,7 +54,7 @@ const experiences = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     year: '2017-2019',
     month: 'Nov - Jul',
     title: 'QA and Application Developer',
