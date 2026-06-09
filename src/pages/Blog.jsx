@@ -60,7 +60,7 @@ return ( <div className="blog-page"> <div className="blog-paper-bg" />
 
     <div className="substack-banner">
       <a
-        href="https://your-substack-url.substack.com"
+        href="https://meayesha24.substack.com/"
         target="_blank"
         rel="noopener noreferrer"
       >
